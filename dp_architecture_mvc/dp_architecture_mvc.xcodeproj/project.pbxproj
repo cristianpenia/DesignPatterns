@@ -183,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				A63944DD2C0A8A04005DA589 /* LaunchScreen.storyboard */,
+				A63944D82C0A8A02005DA589 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -231,7 +232,6 @@
 			children = (
 				A698846F2C0E4ADB00170E90 /* CharacterListView.swift */,
 				A69884742C0E4DAB00170E90 /* CharacterListCellView.swift */,
-				A63944D82C0A8A02005DA589 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";

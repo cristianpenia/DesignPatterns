@@ -16,28 +16,36 @@ class CharacterListCellView: UITableViewCell {
     
     let characterImageView: UIImageView = {
         let imageView = UIImageView()
+        
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        
         return imageView
     }()
 
     let characterName: UILabel = {
         let label = UILabel()
+        
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
+        
         return label
     }()
     
     let characterStatus: UILabel = {
         let label = UILabel()
+        
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
+        
         return label
     }()
     
     let characterSpecie: UILabel = {
         let label = UILabel()
+        
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
+        
         return label
     }()
     

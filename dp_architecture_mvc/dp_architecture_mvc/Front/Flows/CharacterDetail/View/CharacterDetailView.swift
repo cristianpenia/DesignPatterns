@@ -68,7 +68,7 @@ class CharacterDetailView: UIView {
         
         characterImageView.snp.makeConstraints { make in
             make.size.equalTo(200)
-            make.centerY.equalToSuperview().inset(12)
+            make.top.equalTo(safeAreaLayoutGuide).inset(16)
             make.leading.equalToSuperview().inset(12)
         }
         
@@ -79,12 +79,12 @@ class CharacterDetailView: UIView {
         
         characterStatus.snp.makeConstraints { make in
             make.leading.equalTo(characterName.snp.leading)
-            make.top.equalTo(characterName.snp.bottom).offset(8)
+            make.top.equalTo(characterName.snp.bottom).offset(16)
         }
         
         characterSpecie.snp.makeConstraints { make in
             make.leading.equalTo(characterName.snp.leading)
-            make.top.equalTo(characterStatus.snp.bottom).offset(8)
+            make.top.equalTo(characterStatus.snp.bottom).offset(16)
         }
     }
     

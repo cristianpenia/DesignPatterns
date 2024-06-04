@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A63944D32C0A8A02005DA589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63944D22C0A8A02005DA589 /* AppDelegate.swift */; };
 		A63944D52C0A8A02005DA589 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63944D42C0A8A02005DA589 /* SceneDelegate.swift */; };
-		A63944D72C0A8A02005DA589 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63944D62C0A8A02005DA589 /* CharactersViewController.swift */; };
+		A63944D72C0A8A02005DA589 /* CharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63944D62C0A8A02005DA589 /* CharactersListViewController.swift */; };
 		A63944DA2C0A8A02005DA589 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A63944D92C0A8A02005DA589 /* Base */; };
 		A63944DC2C0A8A04005DA589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63944DB2C0A8A04005DA589 /* Assets.xcassets */; };
 		A63944DF2C0A8A04005DA589 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A63944DE2C0A8A04005DA589 /* Base */; };
@@ -30,6 +30,10 @@
 		A698847E2C0E70CF00170E90 /* ListOfCharactersTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A698847D2C0E70CF00170E90 /* ListOfCharactersTableViewDelegate.swift */; };
 		A69884842C0E76E900170E90 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69884832C0E76E900170E90 /* CharacterDetailView.swift */; };
 		A69884862C0E779600170E90 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69884852C0E779600170E90 /* CharacterDetailViewController.swift */; };
+		A69884892C0E7C7000170E90 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69884882C0E7C7000170E90 /* Coordinator.swift */; };
+		A698848B2C0E7D7100170E90 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A698848A2C0E7D7100170E90 /* MainCoordinator.swift */; };
+		A698848D2C0E83EB00170E90 /* CharacterDetailPushCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A698848C2C0E83EB00170E90 /* CharacterDetailPushCoordinator.swift */; };
+		A698848F2C0E874600170E90 /* CharacterDetailModelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A698848E2C0E874600170E90 /* CharacterDetailModelCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +57,7 @@
 		A63944CF2C0A8A02005DA589 /* dp_architecture_mvc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dp_architecture_mvc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63944D22C0A8A02005DA589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A63944D42C0A8A02005DA589 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A63944D62C0A8A02005DA589 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
+		A63944D62C0A8A02005DA589 /* CharactersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewController.swift; sourceTree = "<group>"; };
 		A63944D92C0A8A02005DA589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A63944DB2C0A8A04005DA589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A63944DE2C0A8A04005DA589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,6 +79,10 @@
 		A698847D2C0E70CF00170E90 /* ListOfCharactersTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCharactersTableViewDelegate.swift; sourceTree = "<group>"; };
 		A69884832C0E76E900170E90 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		A69884852C0E779600170E90 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		A69884882C0E7C7000170E90 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A698848A2C0E7D7100170E90 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		A698848C2C0E83EB00170E90 /* CharacterDetailPushCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPushCoordinator.swift; sourceTree = "<group>"; };
+		A698848E2C0E874600170E90 /* CharacterDetailModelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailModelCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,7 @@
 			children = (
 				A63945052C0AC0FF005DA589 /* AppSettings */,
 				A63945072C0AC64D005DA589 /* Networking */,
+				A69884872C0E7C3E00170E90 /* Coordinators */,
 				A63945022C0A8A26005DA589 /* Front */,
 				A63945032C0A8A2A005DA589 /* Resources */,
 			);
@@ -230,7 +239,7 @@
 		A69884682C0E379100170E90 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A63944D62C0A8A02005DA589 /* CharactersViewController.swift */,
+				A63944D62C0A8A02005DA589 /* CharactersListViewController.swift */,
 				A69884772C0E51F500170E90 /* ListOfCharacterTableViewDataSource.swift */,
 				A698847D2C0E70CF00170E90 /* ListOfCharactersTableViewDelegate.swift */,
 			);
@@ -285,6 +294,17 @@
 				A69884852C0E779600170E90 /* CharacterDetailViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		A69884872C0E7C3E00170E90 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				A69884882C0E7C7000170E90 /* Coordinator.swift */,
+				A698848A2C0E7D7100170E90 /* MainCoordinator.swift */,
+				A698848C2C0E83EB00170E90 /* CharacterDetailPushCoordinator.swift */,
+				A698848E2C0E874600170E90 /* CharacterDetailModelCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,10 +446,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A63944D72C0A8A02005DA589 /* CharactersViewController.swift in Sources */,
+				A63944D72C0A8A02005DA589 /* CharactersListViewController.swift in Sources */,
 				A698846A2C0E37EB00170E90 /* APIClient.swift in Sources */,
 				A69884842C0E76E900170E90 /* CharacterDetailView.swift in Sources */,
 				A698847E2C0E70CF00170E90 /* ListOfCharactersTableViewDelegate.swift in Sources */,
+				A69884892C0E7C7000170E90 /* Coordinator.swift in Sources */,
 				A69884752C0E4DAB00170E90 /* CharacterListCellView.swift in Sources */,
 				A69884702C0E4ADB00170E90 /* CharacterListView.swift in Sources */,
 				A63945092C0AC66E005DA589 /* APIRouterHome.swift in Sources */,
@@ -437,10 +458,13 @@
 				A698846C2C0E49AC00170E90 /* CharacterModelResponse.swift in Sources */,
 				A69884782C0E51F500170E90 /* ListOfCharacterTableViewDataSource.swift in Sources */,
 				A69884862C0E779600170E90 /* CharacterDetailViewController.swift in Sources */,
+				A698848F2C0E874600170E90 /* CharacterDetailModelCoordinator.swift in Sources */,
 				A639450B2C0AC70A005DA589 /* APIManager.swift in Sources */,
 				A698846E2C0E49D200170E90 /* CharacterModel.swift in Sources */,
 				A63944D32C0A8A02005DA589 /* AppDelegate.swift in Sources */,
+				A698848B2C0E7D7100170E90 /* MainCoordinator.swift in Sources */,
 				A63944D52C0A8A02005DA589 /* SceneDelegate.swift in Sources */,
+				A698848D2C0E83EB00170E90 /* CharacterDetailPushCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

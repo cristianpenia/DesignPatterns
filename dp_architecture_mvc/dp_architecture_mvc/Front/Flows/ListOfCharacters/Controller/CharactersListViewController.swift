@@ -10,7 +10,9 @@ import UIKit
 class CharactersListViewController: UIViewController {
     
     var mainView: CharacterListView { self.view as! CharacterListView }
+    
     let apiClient = ListOfCharactersAPIClient()
+    
     private var tableViewDataSource: ListOfCharacterTableViewDataSource?
     private var tableViewDelegate: ListOfCharactersTableViewDelegate?
     
@@ -32,12 +34,9 @@ class CharactersListViewController: UIViewController {
         
         // obtener el index y lo usamos en el modelo, inicializamos el viewcontroller, y presentamos
         tableViewDelegate?.didTapOnCell = { [weak self] index in
-            print("Index \(index)")
-            
             guard let dataSource = self?.tableViewDataSource else {
                 return
             }
-            
             
             /* ARTESANAL
             let characterModel = dataSource.characters[index]
@@ -54,13 +53,16 @@ class CharactersListViewController: UIViewController {
             
             // MODAL
             let characterModel = dataSource.characters[index]
+            
             self?.characterDetailCoordinator = CharacterDetailModalCoordinator(viewController: self, characterModel: characterModel)
+            
             self?.characterDetailCoordinator?.start()
             
         }
         
         Task {
             let characters = await apiClient.getListOfCharacters()
+            
             tableViewDataSource?.set(characters: characters.results)
         }
     }
